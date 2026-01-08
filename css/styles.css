@@ -896,54 +896,68 @@ border-top: 1px solid rgba(255, 255, 255, 0.2);
 color: rgba(255, 255, 255, 0.6);
 }
 /* ==========================================
-Responsive Design
-========================================== */
+   Responsive Design
+   ========================================== */
 @media (max-width: 768px) {
-.hamburger {
-display: flex;
-}
-.nav-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--white);
-    flex-direction: column;
-    padding: 1rem;
-    box-shadow: 0 5px 10px var(--shadow);
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-menu {
+        display: none !important;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 5px 10px var(--shadow);
+    }
+
+    .nav-menu.active {
+        display: flex !important;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+    }
+
+    .service-grid,
+    .features-grid,
+    .pricing-grid,
+    .credentials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-.nav-menu.active {
-    display: flex;
-}
-
-.hero h1 {
-    font-size: 2rem;
-}
-
-.hero-cta {
-    flex-direction: column;
-}
-
-.service-grid,
-.features-grid,
-.pricing-grid,
-.credentials-grid {
-    grid-template-columns: 1fr;
-}
-
-.contact-grid {
-    grid-template-columns: 1fr;
-}
-
-.form-row {
-    grid-template-columns: 1fr;
-}
-
-.footer-grid {
-    grid-template-columns: 1fr;
-}
+/* ==========================================
+   Desktop Navigation (Explicit)
+   ========================================== */
+@media (min-width: 769px) {
+    .hamburger {
+        display: none !important;
+    }
+    
+    .nav-menu {
+        display: flex !important;
+    }
 }
 /* ==========================================
 Animations
