@@ -1,7 +1,3 @@
----
-
-js/main.js
-```javascript
 // ==========================================
 // BlueLine Emergency Plumbing - JavaScript
 // ==========================================
@@ -307,5 +303,3 @@ window.addEventListener('DOMContentLoaded', () => {
         input.setAttribute('min', today);
     });
 });
-```
-
