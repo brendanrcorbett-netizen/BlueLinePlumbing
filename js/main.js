@@ -1,6 +1,6 @@
 ---
 
-## js/main.js
+js/main.js
 ```javascript
 // ==========================================
 // BlueLine Emergency Plumbing - JavaScript
